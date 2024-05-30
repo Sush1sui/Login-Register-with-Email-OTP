@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../styles/pyramid.png"
+            type="image/x-icon"
+        />
+        <title>Register | JPM Pyramid</title>
+        <link rel="stylesheet" href="../styles/general.css" />
+        <link rel="stylesheet" href="../styles/button.css" />
+        <link rel="stylesheet" href="../styles/loginregister.css" />
+        <link rel="stylesheet" href="../styles/otp.css" />
+        <link rel="stylesheet" href="../styles/msgbox.css" />
+    </head>
+    <body>
+        <form id="registerForm">
+            <h2>REGISTER</h2>
+            <div class="input-form">
+                <label for="idnum">ID Number</label>
+                <input
+                    type="text"
+                    name="idnum"
+                    id="idnum"
+                    placeholder="1234567890"
+                    required
+                />
+            </div>
+            <div class="input-form">
+                <label for="surname">Surname</label>
+                <input
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Dela Cruz"
+                    required
+                />
+            </div>
+            <div class="input-form">
+                <label for="firstname">First Name</label>
+                <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="Juan"
+                    required
+                />
+            </div>
+            <div class="input-form">
+                <label for="address">Address</label>
+                <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="123, Mondstadt, Teyvat"
+                    required
+                />
+            </div>
+            <div class="input-form">
+                <label for="contact">Contact</label>
+                <input
+                    type="text"
+                    name="contact"
+                    id="contact"
+                    placeholder="09451702380"
+                    required
+                />
+            </div>
+            <div class="input-form">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="yelansupremacy@gmail.com"
+                    required
+                />
+            </div>
+            <div class="input-form">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter Username"
+                    required
+                />
+            </div>
+            <div class="password-form">
+                <label for="password">Password</label>
+                <div>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password"
+                        required
+                    />
+                    <span id="pwbtn"><img src="../styles/eye-open.svg" /></span>
+                </div>
+            </div>
+            <div class="otp-wrapper">
+                <div class="otp-form">
+                    <h2>
+                        OTP has been sent to your Email, please wait for a few
+                        moments
+                    </h2>
+                    <input id="OTP_Input" type="text" maxlength="4" required />
+                    <button class="green-btn" id="verify-otp-btn" type="button">
+                        VERIFY
+                    </button>
+                </div>
+            </div>
+            <div class="link-btn-container">
+                <a class="link-btn" href="/login">I already have an account</a>
+            </div>
+            <button class="green-btn" id="register-btn" type="button">
+                REGISTER
+            </button>
+        </form>
+    </body>
+    <script src="../scripts/frontend/passwordBtn.js"></script>
+    <script
+        type="module"
+        src="../scripts/frontend/registerFrontend.js"
+    ></script>
+</html>

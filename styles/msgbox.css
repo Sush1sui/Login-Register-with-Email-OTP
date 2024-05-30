@@ -1,0 +1,41 @@
+.success,
+.fail {
+    position: fixed;
+    bottom: -10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 102;
+}
+.fail {
+    background-color: crimson;
+}
+
+.success.active,
+.fail.active {
+    animation: popUpAnimation 4s ease-in-out;
+}
+
+@keyframes popUpAnimation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        bottom: 10px;
+        opacity: 1;
+    }
+    90% {
+        bottom: 10px;
+        opacity: 1;
+    }
+    100% {
+        bottom: -10px;
+        display: block;
+        opacity: 0;
+    }
+}

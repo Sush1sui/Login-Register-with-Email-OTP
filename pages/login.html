@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../styles/pyramid.png"
+            type="image/x-icon"
+        />
+        <title>Login | JPM Pyramid</title>
+        <link rel="stylesheet" href="../styles/general.css" />
+        <link rel="stylesheet" href="../styles/button.css" />
+        <link rel="stylesheet" href="../styles/loginregister.css" />
+        <link rel="stylesheet" href="../styles/msgbox.css" />
+    </head>
+    <body>
+        <form id="loginForm" action="/login" method="post">
+            <h2>LOGIN</h2>
+            <div class="input-form">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter Username"
+                    required
+                />
+            </div>
+            <div class="password-form">
+                <label for="password">Password</label>
+                <div>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password"
+                        required
+                    />
+                    <span id="pwbtn"><img src="../styles/eye-open.svg" /></span>
+                </div>
+            </div>
+            <div class="link-btn-container">
+                <a class="link-btn" href="/register">Register</a>
+                <a class="link-btn" href="/forgotPassword">Forgot Password</a>
+            </div>
+            <button class="green-btn" type="button" id="login-form-btn">
+                LOGIN
+            </button>
+        </form>
+    </body>
+    <script src="../scripts/frontend/passwordBtn.js"></script>
+    <script type="module" src="../scripts/frontend/loginFrontend.js"></script>
+</html>
